@@ -1,0 +1,66 @@
+
+.project-list {
+    box-sizing            : border-box; 
+    padding               : 5px; 
+    max-width             : 100%; 
+    max-height            : 100%;
+    border-radius         : 20px;
+    display               : grid; 
+    grid-template-columns : 1fr 1fr 1fr 1fr 1fr;
+    background-color      : darkslategrey;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: space-around;
+}
+
+.project-display {
+    width   : 100%;
+    height  : 100%;
+    border-radius: 20px;
+    background-color:bisque;
+    border-color: azure;
+    border-style: solid;
+    border-width : thick;
+    border-color: black;
+    
+    box-sizing: border-box;
+
+    --display-angle: 0deg;
+    --display-scale: 1.0; 
+    transform: rotate(var(--display-angle)) scale(var(--display-scale));
+    transition: transform 50ms ease-in-out
+}
+
+.project-display:hover {
+    --display-angle : 5deg;
+    --display-scale : 1.15; 
+    border-style: solid;
+    border-width : thick;
+    border-color: cornflowerblue;
+    z-index:1;
+}
+
+.project-display:not(:hover) {
+    --display-angle : 0deg;
+    --display-scale : 1; 
+    border-style: solid;
+    border-width : thick;
+    border-color: black;
+    z-index:0;
+}
+
+.project-image {
+    width  : 100%;
+    height : 50%;
+    padding:5px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+.project-title {
+    font-size: larger;
+}
+
+.project-description {
+    padding-left : 10%;
+}
