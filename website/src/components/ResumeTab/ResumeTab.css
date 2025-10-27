@@ -1,0 +1,23 @@
+.resume-list {
+    display : grid; 
+    height : 100%; 
+    width  : 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+}
+
+.resume {
+    display: flex; 
+    flex-direction: column;
+    height : 100%; 
+    width  : 100%;
+}
+
+.resume-title {
+    height : auto; 
+    width : auto; 
+}
+
+.resume-data { 
+    flex: 1 1 100%;
+}
