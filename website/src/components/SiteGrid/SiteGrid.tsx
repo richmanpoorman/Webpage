@@ -15,7 +15,7 @@ function SiteGrid() : ReactElement {
 
     return (
         <div className="site-grid">
-            <WebsiteHeader className="site-grid-header"/>
+            <WebsiteHeader className="site-grid-header" currentContent={currentContent} setCurrentContent={setCurrentContent}/>
             <Sidebar className="site-grid-sidebar" currentContent={currentContent} setCurrentContent={setCurrentContent}/>
             {contentElement}
         </div>
