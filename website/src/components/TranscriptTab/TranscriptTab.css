@@ -1,22 +1,22 @@
-.resume-list {
+.transcripts-list {
     display : flex;
     flex-direction: column;
     min-height : 100%; 
     width  : 100%;
 }
 
-.resume {
+.transcript {
     display: flex; 
     flex-direction: column;
     min-height : 100%; 
     width  : 100%;
 }
 
-.resume-title {
+.transcript-title {
     height : auto; 
     width : auto; 
 }
 
-.resume-data { 
-    flex: 1 0 100%;
+.transcript-data { 
+    flex: 1 0 auto;
 }

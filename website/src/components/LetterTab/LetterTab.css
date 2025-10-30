@@ -1,22 +1,22 @@
-.resume-list {
+.letters-list {
     display : flex;
     flex-direction: column;
     min-height : 100%; 
     width  : 100%;
 }
 
-.resume {
+.letter {
     display: flex; 
     flex-direction: column;
     min-height : 100%; 
     width  : 100%;
 }
 
-.resume-title {
+.letter-title {
     height : auto; 
     width : auto; 
 }
 
-.resume-data { 
-    flex: 1 0 100%;
+.letter-data { 
+    flex: 1 0 auto;
 }

@@ -31,7 +31,7 @@ function ProjectDisplay(project : Project) : ReactElement {
                                           : <></>;
     return (
         <a href={project.link} className="project-display">
-            {image}
+            {/* {image} */}
             {title}
             {description}
         </a>

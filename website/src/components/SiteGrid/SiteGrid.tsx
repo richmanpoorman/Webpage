@@ -6,6 +6,10 @@ import ProjectList from "../ProjectList/ProjectList";
 import "./SiteGrid.css";
 import Sidebar from "../Sidebar/Sidebar";
 import ResumeTab from "../ResumeTab/ResumeTab";
+import LetterTab from "../LetterTab/LetterTab";
+import TranscriptTab from "../TranscriptTab/TranscriptTab";
+import CoursesTab from "../CoursesTab/CoursesTab";
+import HomeTab from "../HomeTab/HomeTab";
 
 export type CurrentContentView = "Home" | "Courses" | "Projects" | "Resume" | "Letters of Reccomendation" | "Transcript"; 
 
@@ -26,17 +30,17 @@ function SiteGrid() : ReactElement {
 function getCorrectContent(currentContent : CurrentContentView, contentClassName : string = "site-grid-content") : ReactElement {
     switch (currentContent) {
         case "Home":
-            return <p>Home</p>;
+            return <HomeTab className={contentClassName}/>;
         case "Courses":
-            return <p>Courses</p>; 
+            return <CoursesTab className={contentClassName}/>; 
         case "Projects":
             return <ProjectList className={contentClassName}/>; 
         case "Resume":
-            return <ResumeTab className={contentClassName}/>
-            case "Letters of Reccomendation":
-                return <p>Letters of Recommendation</p>
+            return <ResumeTab className={contentClassName}/>; 
+        case "Letters of Reccomendation":
+            return <LetterTab className={contentClassName}/>; 
         case "Transcript":
-            return <p>Transcript</p>
+            return <TranscriptTab className={contentClassName}/>
     }
 }
 
