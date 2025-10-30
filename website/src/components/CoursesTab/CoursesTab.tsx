@@ -2,6 +2,7 @@ import type { ReactElement } from "react";
 import { education } from "../../assets/data.json";
 import TabsList from "../Tabs/TabsList";
 import Tab from "../Tabs/Tab";
+import TabGroup from "../Tabs/TabGroup";
 
 type CourseData = {
     name        : string, 
@@ -10,9 +11,14 @@ type CourseData = {
     grade?      : string 
 };
 
+type SemesterData = {
+    semester : string, 
+    courses  : CourseData[]
+}
+
 type TranscriptData = {
-    school  : string, 
-    courses : CourseData[]
+    school    : string, 
+    semesters : SemesterData[]
 }; 
 
 type CoursesTabProps = {
@@ -32,15 +38,24 @@ function CoursesTab({className = ""} : CoursesTabProps) : ReactElement {
     );
 }
 
-function makeTranscriptTab({school, courses} : TranscriptData) : ReactElement {
-    const coursesTabs : ReactElement[] = courses.map(makeCourseTab);
+function makeTranscriptTab({school, semesters} : TranscriptData) : ReactElement {
+    const semestersTab : ReactElement[] = semesters.map(makeSemestersTab);
     return (
         <Tab tabName={school}>
             <h2>{school}</h2>
             <TabsList className="courses-course-data">
-                {coursesTabs}
+                {semestersTab}
             </TabsList>
         </Tab>
+    );
+}
+
+function makeSemestersTab({semester, courses} : SemesterData) : ReactElement {
+    const coursesElements : ReactElement[] = courses.map(makeCourseTab); 
+    return (
+        <TabGroup groupName={semester}>
+            {coursesElements}
+        </TabGroup>
     );
 }
 

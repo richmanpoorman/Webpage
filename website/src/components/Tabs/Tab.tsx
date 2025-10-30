@@ -9,14 +9,18 @@ export type TabProps = {
 };
 
 function Tab({className = "", tabName, children} : TabProps) : ReactElement {
-    const [setData, setActive] = useContext(TabContext)
+    const [setData, onSwitch, depth] = useContext(TabContext)
 
-    function onClick() : void {
+    function onTabSelect() : void {
+        console.log("Setting data");
         setData(children); 
-        setActive(); 
     }
 
-    return <button className={"tab " + className} onClick={onClick}>
+    function onTabDeselect() : void {
+        console.log("Unselecting value")
+    }
+
+    return <button className={"tab " + className} onClick={() => onSwitch(onTabSelect, onTabDeselect)}>
         {tabName}
     </button>
 }

@@ -3,7 +3,7 @@ import { about } from "../../assets/data.json";
 
 type AboutData = {
     photo? : string, 
-    description : string
+    description : string[]
 }
 
 type HomeTabProps = {
@@ -14,13 +14,17 @@ const { photo, description } : AboutData = about;
 
 function HomeTab({className = ""} : HomeTabProps) : ReactElement {
     const imageElement : ReactElement = photo ? <img className="home-photo" src={photo}/> : <></>;
-    const descriptionElement : ReactElement = <p className="home-description">{description}</p>;
+    const descriptionLines : ReactElement[] = description.map(renderLine);
     return (
         <div className={"home-tab " + className}>
             {imageElement}
-            {descriptionElement}
+            {descriptionLines}
         </div>
     );
+}
+
+function renderLine(singleDescriptionLine : string) : ReactElement {
+    return <p className="home-description">{singleDescriptionLine}</p>;
 }
 
 export default HomeTab;
