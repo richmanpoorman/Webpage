@@ -1,5 +1,7 @@
 import type { ReactElement, CSSProperties } from "react";
 import type { CurrentContentView } from "../SiteGrid/SiteGrid";
+import "./WebsiteHeader.css";
+
 
 type WebsiteHeaderProps = {
     className?        : string,

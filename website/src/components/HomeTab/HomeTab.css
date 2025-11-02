@@ -1,0 +1,19 @@
+.home-tab {
+    display:flex; 
+    align-items: flex-start;
+    padding : 10%;
+    gap : 40px;
+}
+
+.home-photo {
+    float : left; 
+    width : 20%; 
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    margin : 10px;
+    border-radius: 20px;
+    border-color: white;
+    border-width: medium;
+    border-style: solid;
+    flex: 0 0 auto;
+}

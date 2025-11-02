@@ -31,9 +31,11 @@ function ProjectDisplay(project : Project) : ReactElement {
                                           : <></>;
     return (
         <a href={project.link} className="project-display">
-            {/* {image} */}
-            {title}
-            {description}
+            <div className="project-display-content">
+                {/* {image} */}
+                {title}
+                {description}
+            </div>
         </a>
     );
 }

@@ -1,0 +1,40 @@
+.courses-semester {
+    max-height : 100%; 
+
+    > .tab-group-name {
+        display : flex; 
+        flex-direction : column;
+        margin : 10px auto;
+    };
+    
+}
+
+.courses-tab-list {
+    max-height : 80vh;
+}
+
+.courses-course-tab {
+    display : block;
+    width   : 100%;
+}
+
+.courses-semester-data {
+    display : grid; 
+    grid-template-columns: 15% auto; 
+    grid-template-rows: auto;
+    gap: 20px;
+    grid-template-areas: 
+        "sidebar" "content";
+    height : 100%; 
+    
+    > .tabs-bar {
+        grid-area: "sidebar";
+        max-height : 100%;
+        padding : 10px; 
+        overflow : auto; 
+    };
+
+    > .tabs-content {
+        grid-area : "content";
+    };
+}

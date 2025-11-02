@@ -31,7 +31,7 @@ function TabsList({className, children, showInitial = true} : TabsListProps) : R
     function onTabSwitch(onTabSelect : () => void, onTabDeselect : () => void) : void {
         onPreviousTabDeselect(); 
         onTabSelect(); 
-        setOnPreviousTabDeselect(onTabDeselect);
+        setOnPreviousTabDeselect(() => onTabDeselect);
     }
 
     const childrenWithContext : ReactElement[] = children.map( (tab : ReactElement) => {

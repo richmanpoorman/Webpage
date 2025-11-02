@@ -3,6 +3,7 @@ import { education } from "../../assets/data.json";
 import TabsList from "../Tabs/TabsList";
 import Tab from "../Tabs/Tab";
 import TabGroup from "../Tabs/TabGroup";
+import "./CoursesTab.css";
 
 type CourseData = {
     name        : string, 
@@ -43,7 +44,7 @@ function makeTranscriptTab({school, semesters} : TranscriptData) : ReactElement 
     return (
         <Tab tabName={school}>
             <h2>{school}</h2>
-            <TabsList className="courses-course-data">
+            <TabsList className="courses-semester-data">
                 {semestersTab}
             </TabsList>
         </Tab>
@@ -53,7 +54,7 @@ function makeTranscriptTab({school, semesters} : TranscriptData) : ReactElement 
 function makeSemestersTab({semester, courses} : SemesterData) : ReactElement {
     const coursesElements : ReactElement[] = courses.map(makeCourseTab); 
     return (
-        <TabGroup groupName={semester}>
+        <TabGroup className="courses-semester" groupName={semester}>
             {coursesElements}
         </TabGroup>
     );
@@ -63,7 +64,7 @@ function makeCourseTab({name, description, code, grade} : CourseData) : ReactEle
     const classCodeElement : ReactElement = code  ? <p className="courses-course-code">Class Code: {code}</p> : <></>;
     const gradeElement     : ReactElement = grade ? <p className="courses-course-grade">Grade: {grade}</p>    : <></>;
     return (
-        <Tab tabName={name}>
+        <Tab className="courses-course-tab" tabName={name}>
             <h3 className="courses-course-name">{name}</h3>
             {classCodeElement}
             <p className="courses-course-description">{description}</p>

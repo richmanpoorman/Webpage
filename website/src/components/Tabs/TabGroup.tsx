@@ -21,8 +21,11 @@ function TabGroup({className = "", groupName, children} : TabGroupProps) : React
     });
     return (
         <div className={"tab-group " + className + " " + groupName}>
-            <h4>{groupName}</h4>
-            {childrenWithContext}
+            <h4 className={"tab-group-name " + groupName + " " + className}>{groupName}</h4>
+            <div className={"tab-group-tabs " + groupName + " " + className}>
+                {childrenWithContext}
+            </div>
+            
         </div>
     )
 }
