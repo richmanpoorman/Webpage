@@ -23,7 +23,7 @@ function Sidebar({className = "", currentContent, setCurrentContent} : SidebarPr
     const projectsTab   : ReactElement  = <button className="sidebar-projects-button sidebar-button"   onClick={setViewFunction("Projects")}                  style={selected}>Projects</button>
     const resumeTab     : ReactElement  = <button className="sidebar-resume-button sidebar-button"     onClick={setViewFunction("Resume")}                    style={selected}>Resume</button>
     // const letttersTab   : ReactElement  = <button className="sidebar-letters-button sidebar-button"    onClick={setViewFunction("Letters of Reccomendation")} style={selected}>Letters of Recommendation</button>
-    const transcriptTab : ReactElement  = <button className="sidebar-transcript-button sidebar-button" onClick={setViewFunction("Transcript")}                style={selected}>Transcript</button>
+    // const transcriptTab : ReactElement  = <button className="sidebar-transcript-button sidebar-button" onClick={setViewFunction("Transcript")}                style={selected}>Transcript</button>
     return (
         <div className={"website-sidebar " + className}>
             {/* <div>{homeTab}</div> */}

@@ -6,8 +6,8 @@ let initialContext : [
     (onTabSelect: () => void, onTabDeselect: () => void) => void,   // Function that calls "on switch" (onSwitch)
     number
 ] = [
-    (setComponent : ReactNode) => {}, 
-    (onTabSelect: () => void, onTabDeselect: () => void) => {}, 
+    (_setComponent : ReactNode) => {}, 
+    (_onTabSelect: () => void, _onTabDeselect: () => void) => {}, 
     0
 ];
 

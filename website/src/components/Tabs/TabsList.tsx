@@ -1,5 +1,4 @@
-import { type FunctionComponent, Children, useState, type ReactElement, type ReactNode } from "react";
-import type { CSSProperties } from "react";
+import { Children, useState, type ReactElement, type ReactNode } from "react";
 import { TabContext } from "./TabContext";
 import "./TabsList.css"
 import Tab, { type TabProps } from "./Tab";

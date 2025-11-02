@@ -24,8 +24,8 @@ function ProjectList({className = ""} : ProjectListProps) : ReactElement {
 }
 
 function ProjectDisplay(project : Project) : ReactElement {
-    let image       = project.image ? <img className="project-image" src={project.image} /> 
-                                    : <div className="project-image"></div>; 
+    // let image       = project.image ? <img className="project-image" src={project.image} /> 
+    //                                 : <div className="project-image"></div>; 
     let title       = <h2 className="project-title">{project.title}</h2>; 
     let description = project.description ? <p className="project-description">{project.description}</p> 
                                           : <></>;

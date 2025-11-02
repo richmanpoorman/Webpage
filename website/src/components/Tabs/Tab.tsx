@@ -9,7 +9,7 @@ export type TabProps = {
 };
 
 function Tab({className = "", tabName, children} : TabProps) : ReactElement {
-    const [setData, onSwitch, depth] = useContext(TabContext)
+    const [setData, onSwitch, _depth] = useContext(TabContext)
 
     function onTabSelect() : void {
         console.log("Setting data");
