@@ -5,6 +5,8 @@
             "file"  : "src/assets/resumes/Resume.pdf"
         }
     ],
+    "letters" : [ ],
+    "transcripts" : [ ],
     "about" : {
         "photo" : "src/assets/images/headshot.jpg", 
         "description" : [
