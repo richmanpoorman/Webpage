@@ -2,13 +2,13 @@
     "resumes" : [
         {
             "title" : "Matthew's Resume", 
-            "file"  : "src/assets/resumes/Resume.pdf"
+            "file"  : "./src/assets/resumes/Resume.pdf"
         }
     ],
     "letters" : [ ],
     "transcripts" : [ ],
     "about" : {
-        "photo" : "src/assets/images/headshot.jpg", 
+        "photo" : "./src/assets/images/headshot.jpg", 
         "description" : [
             "I am currently a graduating Computer Science major at Tufts University and actively seeking a full-time opportunity as a software developer or solutions architect.",
             "I like to solve puzzles and play board games. I bring that creative problem solving energy to everything that I do. I have experience across the full breadth of software development, working to both integrate the different facets of AI technologies to meet customer needs. During my time at AS Watsons, I especially enjoyed developing the plan to put the pieces together in a modular and extensible way, and found it gratifying to find my design flexibly adapt to changes in requirements.",
