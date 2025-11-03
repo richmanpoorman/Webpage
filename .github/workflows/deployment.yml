@@ -40,7 +40,8 @@ jobs:
         with:
           node-version: 'latest'
           cache: 'npm'
-          cache-dependency-path: './website/package-lock.json'
+          cache-dependency-path: './package-lock.json'
+          folder: './website'
       - name: Install dependencies
         run: npm ci
       - name: Build
@@ -51,7 +52,8 @@ jobs:
         uses: actions/upload-pages-artifact@v4
         with:
           # Upload dist folder
-          path: './website/dist'
+          path: './dist'
+          folder: './website'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
