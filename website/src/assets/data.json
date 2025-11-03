@@ -1,0 +1,325 @@
+{
+    "resumes" : [
+        {
+            "title" : "Matthew's Resume", 
+            "file"  : "src/assets/resumes/Resume.pdf"
+        }
+    ],
+    "about" : {
+        "photo" : "src/assets/images/headshot.jpg", 
+        "description" : [
+            "I am currently a graduating Computer Science major at Tufts University and actively seeking a full-time opportunity as a software developer or solutions architect.",
+            "I like to solve puzzles and play board games. I bring that creative problem solving energy to everything that I do. I have experience across the full breadth of software development, working to both integrate the different facets of AI technologies to meet customer needs. During my time at AS Watsons, I especially enjoyed developing the plan to put the pieces together in a modular and extensible way, and found it gratifying to find my design flexibly adapt to changes in requirements.",
+            "I have been coding since I was 12 years old, and am always looking to learn more about programming, AI, cybersecurity, and Agile development.",
+            "You can reach me at my email: matthewkw123@gmail.com"
+        ]
+    },
+    "projects" : [
+        {
+            "title"       : "Stepping Stones", 
+            "link"        : "https://github.com/JamesEye/MangoTangoBoardGame", 
+            "description" : "An online version of a physical board game by James Intrilligator and Patrick Williams. The game consisted of tiles that you could place and move, and a scout which could move on top of the same colored tiles. The goal of the game was to either reach the other end of the board or to push the opponents scout off. The game also had a special mechanic where the players could 'push' rows or columns of tiles, adding to the strategic depth of the game. Built in a team of 4 in Godot with C#.", 
+            "image"       : ""
+        }, 
+        {
+            "title"       : "Spellweaver", 
+            "link"        : "https://github.com/Noah-Terve/Spell-Weaver", 
+            "description" : "A videogame built on the premise of creating new 'spells' by combining different traits to create new spells by the player's design. With over 1000 options for the player, the game emphasizes player creativity. Built in a team of 4 in Unity with C#.", 
+            "image"       : ""
+        }, 
+        {
+            "title"       : "Dungeon Restocker", 
+            "link"        : "https://github.com/JiuyaLin/GMTKGameJam2023", 
+            "description" : "A videogame where instead of gaining items to get more power, you drop cursed items to get rid of curses. This focuses on adaptation of the player and the ability to create builds by only keeping items that synergize. Built in a team of 5 in Unity with C#.", 
+            "image"       : ""
+        },
+        {
+            "title"       : "Multiplayer Pacman", 
+            "link"        : "https://github.com/richmanpoorman/CS21_FinalProject", 
+            "description" : "A twist on the classic game of Pacman, where multiple people can join and play at the same time. The goal is to out-survive all of the other players, with threats from ghosts chasing players around the map. Made with Python and Erlang.", 
+            "image"       : ""
+        },
+        {
+            "title"       : "Wave Function Collapse Terrain Generation", 
+            "link"        : "https://github.com/richmanpoorman/WaveFunctionCollapse", 
+            "description" : "An generalized implementation of Wave Function Collapse for terrain generation, with adjustable weightings and tiling. Built as a way of generating more natural terrain from scratch. Coded in Python.", 
+            "image"       : ""
+        },
+        {
+            "title"       : "Lossy Photo Compression", 
+            "link"        : "https://github.com/richmanpoorman/CS40_HW_4", 
+            "description" : "A lossy compression algorithm for photos which reduced file size by 75% while maintaing above 90% accuracy. Used color theory and bitpacking to reduce the file size while minimizing lost. Built in a team of 2 in C.", 
+            "image"       : ""
+        },
+        {
+            "title"       : "Night Club Flow Modeling", 
+            "link"        : "https://github.com/richmanpoorman/MATH87-Final-Project", 
+            "description" : "Modeled a night club with a bar for drinks, a food area, and a dance floor. Optimized for the bar to make as much money as possible, while maintaining enjoyment by keeping people on the dance floor. Also accounted for different drinks with different pricing throughout the night, and different entrance tickets of varying prices and times. Built in a team of 3 using MATLAB.", 
+            "image"       : ""
+        },
+        {
+            "title"       : "Pong on the FPGA", 
+            "link"        : "https://github.com/Eddyzzzzz/Pong", 
+            "description" : "A lower-level implementation of the classic game of Pong, built to run on an FPGA. Developed in a team of 4 using VHDL.", 
+            "image"       : ""
+        },
+        {
+            "title"       : "Ocean Simulation", 
+            "link"        : "https://github.com/Snw125/Computer-Graphics-Final", 
+            "description" : "A simulation of ocean water using the sin of sins technique, a technique common in the gaming industry for water. The water was rendered using the GPU allowing for fast and large computations. Built in a team of 3 using Unity using GLSL.", 
+            "image"       : ""
+        },
+        {
+            "title"       : "Taxi Rush", 
+            "link"        : "https://github.com/abarg12/Tufts22Team1", 
+            "description" : "A puzzle game where you direct taxi cars to their destination by placing blockades in their way. Built in a team of 4 in Unity using C#. ", 
+            "image"       : ""
+        }
+        
+    ],
+    "education" : [
+        {
+            "school"    : "Tufts", 
+            "semesters" : [
+                {
+                    "semester"   : "Fall 2021", 
+                    "courses" : [
+                        {
+                            "name"        : "Data Structures", 
+                            "description" : "Data structures and algorithms are studied through major programming projects. Topics include linked lists, trees, graphs, dynamic storage allocation, and recursion.",
+                            "code"        : "CS 15", 
+                            "grade"       : "A"
+                        },
+                        {
+                            "name"        : "Applications in Engineering - Simple Robotics", 
+                            "description" : "Introduction of various concepts in engineering. Emphasis on project work, engineering ethics, and engineering design process.",
+                            "code"        : "EN 1",
+                            "grade"       : "A+"
+                        },
+                        {
+                            "name"        : "Calculus III", 
+                            "description" : "Vectors in two and three dimensions, applications of the derivative of vector-valued functions of a single variable. Functions of several variables, continuity, partial derivatives, the gradient, directional derivatives. Multiple integrals and their applications. Line integrals, Green's theorem, divergence theorem, Stokes’ theorem.",
+                            "code"        : "MATH 42",
+                            "grade"       : "A+"
+                        },
+                        {
+                            "name"        : "General Physics I", 
+                            "description" : "Principles of classical mechanics, fluids, heat, thermodynamics. Lectures, recitations, laboratories. Calculus based.",
+                            "code"        : "PHY 11",
+                            "grade"       : "A-"
+                        }
+                    ]
+                },
+                {
+                    "semester"   : "Spring 2022", 
+                    "courses" : [
+                        {
+                            "name"        : "Game Design", 
+                            "description" : "Processes, procedures, methodologies, and principles of game design. Managing teamwork, project scope and user experience. Paper and digital prototyping, including the use of software for programming, art, and audio production.",
+                            "code"        : "CS 23",
+                            "grade"       : "A"
+                        },
+                        {
+                            "name"        : "Discrete Mathematics", 
+                            "description" : "Sets, relations and functions, logic and methods of proof, combinatorics, graphs and digraphs.",
+                            "code"        : "MATH 61",
+                            "grade"       : "A+"
+                        },
+                        {
+                            "name"        : "Intro to Ethics", 
+                            "description" : "An introduction to moral judgment--and the reasoning it is based on--by a detailed study of current issues such as abortion, vegetarianism, and responsibility for war crimes, and the application to such problems of ethical theories, such as egoism, utilitarianism, and the doctrine of rights.",
+                            "code"        : "PHIL 24",
+                            "grade"       : "A"
+                        },
+                        {
+                            "name"        : "Intro to Psychology", 
+                            "description" : "Systematic survey of the field of psychology, covering important general principles in the topics of psychological development, sensory processes, perception, motivation, emotion, learning, thinking, intelligence, aptitudes, social problems, and personality.",
+                            "code"        : "PSY 1",
+                            "grade"       : "A+"
+                        }
+                    ]
+                },
+                {
+                    "semester"   : "Fall 2022",
+                    "courses" : [
+                        {
+                            "name"        : "Intro to Security", 
+                            "description" : "A holistic and broad perspective on cyber security. Attacking and defending networks, cryptography, vulnerabilities, reverse engineering, web security, static and dynamic analysis, malware, forensics. Principles illustrated through hands-on labs and projects, including Capture The Flag (CTF) games.",
+                            "code"        : "CS 116",
+                            "grade"       : "A"
+                        },
+                        {
+                            "name"        : "Artificial Intelligence", 
+                            "description" : "History, theory, and computational methods of artificial intelligence. Basic concepts include representation of knowledge and computational methods for reasoning. One or two application areas will be studied, to be selected from expert systems, robotics, computer vision, natural language understanding, and planning.",
+                            "code"        : "CS 131",
+                            "grade"       : "A+"
+                        },
+                        {
+                            "name"        : "Algorithms", 
+                            "description" : "Introduction to the study of algorithms. Strategies such as divide-and-conquer, greedy methods, and dynamic programming. Graph algorithms, sorting, searching, integer arithmetic, hashing, and NP-complete problems.",
+                            "code"        : "CS 160",
+                            "grade"       : "A"
+                        },
+                        {
+                            "name"        : "Intro to Digital Loic Circuits", 
+                            "description" : "An exploration of how microprocessors work. Topics include: Boolean algebra and logic gates; combinational logic; representing numbers and performing arithmetic with circuits; behavior and use of flip-flops; sequential circuits and state machines; instruction sets; and building blocks for constructing microprocessors. Associated lab exercises with FPGAs and modern design tools. Culminating design of a substantial digital system.",
+                            "code"        : "ES 4",
+                            "grade"       : "A"
+                        },
+                        {
+                            "name"        : "Probability", 
+                            "description" : "Probability, conditional probability, random variables and distributions, expectation, special distributions, joint distributions, laws of large numbers, and the central limit theorem.",
+                            "code"        : "MATH 165",
+                            "grade"       : "A+"
+                        }
+                    ]
+                },
+                {
+                    "semester"   : "Spring 2023",
+                    "courses" : [
+                        {
+                            "name"        : "Intro to Machine Learning", 
+                            "description" : "An overview of methods whereby computers can learn from data or experience and make decisions accordingly. Topics include supervised learning, unsupervised learning, reinforcement learning, and knowledge extraction from large databases with applications to science, engineering, and medicine.",
+                            "code"        : "CS 135",
+                            "grade"       : "A"
+                        },
+                        {
+                            "name"        : "Graph Theory", 
+                            "description" : "An introduction to the deeper mathematics of graphs. Topics explore how theorems in graphs can be applied to real life.",
+                            "code"        : "CS 150",
+                            "grade"       : "A+"
+                        },
+                        {
+                            "name"        : "Drawing Foundations", 
+                            "description" : "Drawing is an ancient and universal practice as well as an aspect of visual thinking. Working from direct and indirect observations, students will develop the confidence to evaluate shape, line quality, value, composition, and how the critical choice of materials will impact an idea. Drawing Foundations introduces drawing as a practice of observation. We approach the illusion of space and form through formal analysis and subjective interpretation. Foundations examines the multiple functions of drawing across time and culture as well as emphasizing the breadth of the drawing experience and its application across disciplines. The course provides a format for a focused exploration of drawing practice as an instrument of communication, a source of ideas and an opportunity to risk and move beyond one's current abilities and notions.",
+                            "code"        : "DRWM 26",
+                            "grade"       : "A+"
+                        },
+                        {
+                            "name"        : "Linear Algebra", 
+                            "description" : "Introduction to the theory of vector spaces and linear transformations over the real or complex numbers, including linear independence, dimension, matrix multiplication, similarity and change of basis, inner products, eigenvalues and eigenvectors, and some applications.",
+                            "code"        : "MATH 70",
+                            "grade"       : "A+"
+                        }
+                    ]
+                },
+                {
+                    "semester" : "Fall 2023", 
+                    "courses"  : [
+                        {
+                            "name"        : "Machine Structure and Assembly", 
+                            "description" : "Structure of machine-level data and code, including memory, cache, registers, machine arithmetic, and bitwise operations. Encapsulating machine functionality through interfaces and abstract data types. Structure of assembly code, relocatable object code, and binary machine code, and the translations between them. Applications of machine-level operations and code translations in programming projects.",
+                            "code"        : "CS 40",
+                            "grade"       : "A+"
+                        },
+                        {
+                            "name"        : "Software Engineering", 
+                            "description" : "Core principles and ideas that enable development of large-scale software systems, with a focus on programming. Abstraction, modularity, design patterns, specification, testing, verification, and debugging. ",
+                            "code"        : "CS 121",
+                            "grade"       : "A+"
+                        },
+                        {
+                            "name"        : "Real Analysis I", 
+                            "description" : "An introduction to analysis. Metric spaces (with Euclidean spaces as the primary example), compactness, connectedness, continuity and uniform continuity, uniform convergence, the space of continuous functions on a compact set, contraction mapping lemma with applications.",
+                            "code"        : "MATH 135",
+                            "grade"       : "A+"
+                        },
+                        {
+                            "name"        : "Statistics", 
+                            "description" : "Statistical estimation, sampling distributions of estimators, hypothesis testing, regression, analysis of variance, and nonparametric methods.",
+                            "code"        : "MATH 166",
+                            "grade"       : "A+"
+                        }
+                    ]
+                },
+                {
+                    "semester" : "Spring 2024",
+                    "courses"  : [
+                        {
+                            "name"        : "Epidemics, Plauges, Peoples and Politics", 
+                            "description" : "Origins and evolution of epidemics, rooted in biology, social organization, culture, and political economy. Societies' efforts to contain diseases with a global reach, their effects on world history, their record in literature and art. Cases from early plagues (syphilis, smallpox, bubonic plague), the recurrent threats of influenza, malaria, and tuberculosis, 19th century famines and cholera, to AIDS, emergent diseases like SARS, Ebola and the 'epidemics' of globalization spawned by changes in work, living conditions, and the environment. ",
+                            "code"        : "CH 108",
+                            "grade"       : "P (A-)"
+                        },
+                        {
+                            "name"        : "Concurrent Programming", 
+                            "description" : "Shared memory concurrency including threads, locks, mutexes, semaphores, Deadlock, livelock, shared mutable state. Native concurrency including communicating processes, message send/receive, synchronous and asynchronous communication, isolated mutable state. Team project using students' choice of paradigm and topic. ",
+                            "code"        : "CS 21",
+                            "grade"       : "A"
+                        },
+                        {
+                            "name"        : "Programming Languages", 
+                            "description" : "Principles and application of computer programming languages. Emphasizes ideas and techniques most relevant to practitioners, but includes foundations crucial for intellectual rigor: abstract syntax, lambda calculus, type systems, dynamic semantics. Case studies, reinforced by programming exercises. Grounding sufficient to read professional literature.",
+                            "code"        : "CS 105",
+                            "grade"       : "A"
+                        },
+                        {
+                            "name"        : "Computation Theory", 
+                            "description" : "Models of computation: Turing machines, pushdown automata, and finite automata. Grammars and formal languages, including context-free languages and regular sets. Important problems, including the halting problem and language equivalence theorems. ",
+                            "code"        : "CS 170",
+                            "grade"       : "A+"
+                        },
+                        {
+                            "name"        : "Human Computer Interaction", 
+                            "description" : "Introduction to human-computer interaction, or how computers communicate with people. Methodology for designing and testing user interfaces, interaction styles (command line, menus, graphical user interfaces, virtual reality), interaction techniques (voice, gesture, eye movement), design guidelines, and user-interface management system software. Students will design a small user interface, program a prototype, and test the result for usability.",
+                            "code"        : "CS 171",
+                            "grade"       : "A"
+                        }
+                    ]
+                },
+                {
+                    "semester" : "Fall 2024", 
+                    "courses"  : [
+                        {
+                            "name"        : "Senior Capstone Project I", 
+                            "description" : "Requirements analysis and design of a senior capstone project. Requirements analysis and elicitation methods, and prototyping. Design principles and methods, including designing for usability, security, testability, performance, and scaling. Project management and planning, including cost and effort estimation. Writing effective documentation.",
+                            "code"        : "CS 97",
+                            "grade"       : "A-"
+                        },
+                        {
+                            "name"        : "Database Systems", 
+                            "description" : "Fundamental concepts of database systems, including conceptual design, relational and object-oriented data models, query languages (SQL, QBE), and implementation issues (indexing, transaction processing, concurrent control). The concepts and algorithms covered encompass many of those used in commercial and experimental database systems. Other topics include distributed databases and distributed query processing.",
+                            "code"        : "CS 115",
+                            "grade"       : "P (A+)"
+                        },
+                        {
+                            "name"        : "Computer Graphics", 
+                            "description" : "The course provides the background to understand and build interactive graphics systems. Introduction to computer graphics from simple two-dimensional graphics through three-dimensional viewing and transforms. Interactive graphics programming, raster graphics, raster algorithms, geometrical transformations, viewing in three dimensions, modeling and hierarchical data structures, visual realism, virtual reality, interaction devices, tasks and techniques.",
+                            "code"        : "CS 175",
+                            "grade"       : "P (A+)"
+                        },
+                        {
+                            "name"        : "Mathematical Modeling and Computation", 
+                            "description" : "A survey of major techniques in the use of mathematics to model physical, biological, economic, and other systems; topics may include derivative-based optimization and sensitivity analysis, linear programming, graph algorithms, probabilistic modeling, Monte-Carlo methods, difference equations, and statistical data fitting. This course includes an introduction to computing using a high-level programming language, and studies the transformation of mathematical objects into computational algorithms.",
+                            "code"        : "MATH 87",
+                            "grade"       : "A+"
+                        },
+                        {
+                            "name"        : "Abstract Algebra I", 
+                            "description" : "An introduction to the basic concepts of abstract algebra, including theories of groups and possibly rings and fields.",
+                            "code"        : "MATH 145",
+                            "grade"       : "A+"
+                        }
+                    ]
+                }, 
+                {
+                    "semester" : "Spring 2025", 
+                    "courses"  : [
+                        {
+                            "name"        : "Senior Capstone Project II", 
+                            "description" : "Implementation and testing of the project designed in CS 97. Implementation tools, strategies, and platforms. Testing and debugging methodologies. Maintenance and release management. Legal, ethical, and social impacts of computing.",
+                            "code"        : "CS 98",
+                            "grade"       : "A+"
+                        },
+                        {
+                            "name"        : "Real Analysis II", 
+                            "description" : "In-depth study of functions on Euclidean spaces. Derivatives as linear maps, differentiable mappings, inverse and implicit function theorems. Further topics such as theory of the Riemann and Lebesgue integral, Hilbert spaces, and Fourier series.",
+                            "code"        : "MATH 136",
+                            "grade"       : "A+"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
