@@ -11,3 +11,8 @@
     font-size : min(1em, 15cqh, 5cqw);
 }
 
+@media screen and (max-width : 1024px) {
+    .header-home-button {
+        text-align: center;
+    }
+}
