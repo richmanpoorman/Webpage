@@ -8,12 +8,43 @@
 .home-photo {
     float : left; 
     width : 20%; 
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 5 / 7;
     object-fit: cover;
-    margin : 10px;
     border-radius: 20px;
     border-color: white;
-    border-width: medium;
+    border-width: thin;
     border-style: solid;
     flex: 0 0 auto;
+}
+
+@media screen and (max-width : 1024px) {
+    .home-tab {
+        padding : 0px; 
+        gap: 10px;
+    }
+    .home-photo {
+        height : 100%;
+        width : auto; 
+        aspect-ratio : 5 / 7;
+    }
+    .home-description {
+        height : 100%;
+        overflow: auto;
+    }
+}
+
+@media screen and (max-width : 512px) {
+    .home-tab {
+        flex-direction: column;
+        overflow: auto;
+        gap : 10px;
+    }
+    .home-photo {
+        width : 50%;
+        height : auto;
+        align-self: center;
+    }
+    .home-description {
+        height : auto;
+    }
 }

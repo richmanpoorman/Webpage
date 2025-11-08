@@ -1,6 +1,5 @@
 import type { ReactElement, CSSProperties } from "react";
 import type { CurrentContentView } from "../SiteGrid/SiteGrid";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
 import "./Sidebar.css";
 
 type SidebarProps = {
@@ -16,8 +15,6 @@ function Sidebar({className = "", currentContent, setCurrentContent} : SidebarPr
     }
 
     const selected      : CSSProperties = { "--selected" : currentContent } as CSSProperties;
-    const githubLink    : ReactElement  = <a className="sidebar-github-link sidebar-link-icon" href="https://github.com/richmanpoorman"><FaGithub /></a>
-    const linkedinLink  : ReactElement  = <a className="sidebar-linkedin-link sidebar-link-icon" href="https://www.linkedin.com/in/matthewkw/"><FaLinkedin /></a> // TODO : Replace with icons
     // const homeTab       : ReactElement  = <button className="sidebar-home-button"       onClick={setViewFunction("Home")}                      style={selected}>About</button>
     const coursesTab    : ReactElement  = <button className="sidebar-courses-button sidebar-button"    onClick={setViewFunction("Courses")}                   style={selected}>Courses</button>
     const projectsTab   : ReactElement  = <button className="sidebar-projects-button sidebar-button"   onClick={setViewFunction("Projects")}                  style={selected}>Projects</button>
@@ -27,16 +24,11 @@ function Sidebar({className = "", currentContent, setCurrentContent} : SidebarPr
     return (
         <div className={"website-sidebar " + className}>
             {/* <div>{homeTab}</div> */}
-            <div>{coursesTab}</div>
-            <div>{projectsTab}</div>
-            <div>{resumeTab}</div>
+            {projectsTab}
+            {resumeTab}
+            {coursesTab}
             {/* <div>{letttersTab}</div> */}
             {/* <div>{transcriptTab}</div> */}
-            <div className="sidebar-icons">
-                {githubLink}
-                {linkedinLink}
-            </div>
-            
         </div>
     );
 }

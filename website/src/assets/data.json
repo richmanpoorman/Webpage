@@ -25,7 +25,7 @@
         }, 
         {
             "title"       : "Spellweaver", 
-            "link"        : "https://github.com/Noah-Terve/Spell-Weaver", 
+            "link"        : "https://richmanpoorman.itch.io/spell-weaver-demo", 
             "description" : "A videogame built on the premise of creating new 'spells' by combining different traits to create new spells by the player's design. With over 1000 options for the player, the game emphasizes player creativity. Built in a team of 4 in Unity with C#.", 
             "image"       : ""
         }, 
@@ -73,7 +73,7 @@
         },
         {
             "title"       : "Taxi Rush", 
-            "link"        : "https://github.com/abarg12/Tufts22Team1", 
+            "link"        : "https://richmanpoorman.itch.io/taxi-rush", 
             "description" : "A puzzle game where you direct taxi cars to their destination by placing blockades in their way. Built in a team of 4 in Unity using C#. ", 
             "image"       : ""
         }
@@ -163,7 +163,7 @@
                             "grade"       : "A"
                         },
                         {
-                            "name"        : "Intro to Digital Loic Circuits", 
+                            "name"        : "Intro to Digital Logic Circuits", 
                             "description" : "An exploration of how microprocessors work. Topics include: Boolean algebra and logic gates; combinational logic; representing numbers and performing arithmetic with circuits; behavior and use of flip-flops; sequential circuits and state machines; instruction sets; and building blocks for constructing microprocessors. Associated lab exercises with FPGAs and modern design tools. Culminating design of a substantial digital system.",
                             "code"        : "ES 4",
                             "grade"       : "A"

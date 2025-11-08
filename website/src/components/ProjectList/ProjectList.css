@@ -14,6 +14,22 @@
     justify-content: space-around;
 }
 
+@media screen and (max-width : 1024px) {
+    .project-list {
+        overflow: auto;
+        grid-template-columns : 1fr 1fr;
+        grid-auto-rows: 1fr;
+    }
+}
+
+@media screen and (max-width : 512px) {
+    .project-list {
+        overflow: auto;
+        grid-template-columns : 1fr;
+        grid-auto-rows: 1fr;
+    }
+}
+
 .project-display {
     width   : 100%;
     height  : 100%;
@@ -29,11 +45,11 @@
     --display-angle: 0deg;
     --display-scale: 1.0; 
     transform: rotate(var(--display-angle)) scale(var(--display-scale));
-    transition: transform 50ms ease-in-out
+    transition: transform 250ms ease-in-out
 }
 
 .project-display:hover {
-    --display-angle : 5deg;
+    --display-angle : 2.5deg;
     --display-scale : 1.15; 
     border-style: solid;
     border-width : thick;

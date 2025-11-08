@@ -1,16 +1,49 @@
-.courses-semester {
-    max-height : 100%; 
 
-    > .tab-group-name {
-        display : flex; 
-        flex-direction : column;
-        margin : 10px auto;
-    };
-    
+.courses-school-data {
+    display : grid;
+    width : 100%; 
+    height : 100%; 
+    grid-template-columns : auto; 
+    grid-template-rows: auto minmax(0, 1fr);
+    grid-template-areas: 
+        "school-name" 
+        "school-courses";
 }
 
+.courses-school-name {
+    grid-area : "school-name";
+    padding : 0px; 
+    margin : 0px;
+}
+
+
+.courses-semester-data {
+    grid-area: "school-courses";
+    display : grid; 
+    height : 100%; 
+    grid-template-columns: 15% minmax(0, 1fr); 
+    grid-template-rows: auto;
+    gap: 20px;
+    grid-template-areas: 
+        "courses-sidebar" "courses-content";
+    
+    > .tabs-bar {
+        grid-area: "courses-sidebar";
+        display : flex; 
+        flex-direction: column;
+        max-height : 80vh;
+        padding : 10px; 
+        overflow : auto; 
+    };
+
+    > .tabs-currrent-content {
+        grid-area : "courses-content";
+    };
+}
+
+
 .courses-tab-list {
-    max-height : 80vh;
+    max-height : 100%;
 }
 
 .courses-course-tab {
@@ -18,23 +51,48 @@
     width   : 100%;
 }
 
-.courses-semester-data {
-    display : grid; 
-    grid-template-columns: 15% auto; 
-    grid-template-rows: auto;
-    gap: 20px;
-    grid-template-areas: 
-        "sidebar" "content";
-    height : 100%; 
-    
-    > .tabs-bar {
-        grid-area: "sidebar";
-        max-height : 100%;
-        padding : 10px; 
-        overflow : auto; 
-    };
+.courses-semester {
+    > .tab-group-name {
+        margin : 0px; 
+        padding : 5px; 
+    }
+}
 
-    > .tabs-content {
-        grid-area : "content";
-    };
+@media screen and (max-width : 1024px) {
+
+    .courses-school-name {
+        padding : 0px; 
+        margin : 0px;
+    }
+
+    .courses-semester-data {
+        grid-template-columns: 30% minmax(0, 1fr); 
+        grid-template-rows : minmax(0, 1fr);
+        height : 100%; 
+        
+        > .tabs-bar {
+
+            max-height : 100%;
+            padding : 10px; 
+            overflow : auto; 
+        };
+
+        > .tabs-current-content {
+            max-height : 100%;
+            overflow: auto;
+        };
+
+        .courses-course-name {
+            padding : 0px; 
+            margin : 0px;
+        }
+
+        
+    }
+}
+
+@media screen and (max-width : 512px) {
+    .courses-semester-data {
+        grid-template-columns: 45% minmax(0, 1fr); 
+    }
 }

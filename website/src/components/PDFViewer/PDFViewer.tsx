@@ -9,10 +9,8 @@ type PDFViewerProp = {
 
 function PDFViewer({className = "", filePath, altText = ""} : PDFViewerProp) : ReactElement {
     return (
-        <div className={className}>
-            <object className="pdf" data={filePath} type="application/pdf">
-                <p>{altText}</p>
-            </object>
+        <div className={"pdf-wrapper " + className}>
+            <object className="pdf" data={filePath} type="application/pdf" aria-label={altText}/>
         </div>
     );
 }

@@ -10,6 +10,7 @@ import LetterTab from "../LetterTab/LetterTab";
 import TranscriptTab from "../TranscriptTab/TranscriptTab";
 import CoursesTab from "../CoursesTab/CoursesTab";
 import HomeTab from "../HomeTab/HomeTab";
+import Footer from "../Footer/Footer";
 
 export type CurrentContentView = "Home" | "Courses" | "Projects" | "Resume" | "Letters of Reccomendation" | "Transcript"; 
 
@@ -22,7 +23,8 @@ function SiteGrid() : ReactElement {
         <div className="site-grid">
             <WebsiteHeader className="site-grid-header" currentContent={currentContent} setCurrentContent={setCurrentContent}/>
             <Sidebar className="site-grid-sidebar" currentContent={currentContent} setCurrentContent={setCurrentContent}/>
-            {contentElement}
+            <Footer className="site-grid-footer"/>
+            <div className="site-grid-content">{contentElement}</div>
         </div>
     );
 }

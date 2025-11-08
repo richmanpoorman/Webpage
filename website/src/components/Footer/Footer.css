@@ -1,0 +1,12 @@
+.footer-icons {
+    padding : 0px; 
+    text-align: center;
+    flex : 1 1 auto; 
+}
+
+.footer-link-icon {
+    font-size: 30px;
+    margin : 0 auto; 
+    padding: 20px;
+    color: white;
+}

@@ -15,8 +15,16 @@
 .resume-title {
     height : auto; 
     width : auto; 
+    
 }
 
 .resume-data { 
     flex: 1 0 100%;
+}
+
+@media screen and (max-width : 1024px) {
+    .resume-title {
+        margin : 0px; 
+        padding : 5px; 
+    }
 }

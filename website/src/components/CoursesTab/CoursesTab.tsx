@@ -42,11 +42,13 @@ function CoursesTab({className = ""} : CoursesTabProps) : ReactElement {
 function makeTranscriptTab({school, semesters} : TranscriptData) : ReactElement {
     const semestersTab : ReactElement[] = semesters.map(makeSemestersTab);
     return (
-        <Tab tabName={school}>
-            <h2>{school}</h2>
-            <TabsList className="courses-semester-data">
-                {semestersTab}
-            </TabsList>
+        <Tab className="courses-school-transcript" tabName={school}>
+            <div className="courses-school-data">
+                <h2 className="courses-school-name">{school}</h2>
+                <TabsList className="courses-semester-data">
+                    {semestersTab}
+                </TabsList>
+            </div>
         </Tab>
     );
 }
