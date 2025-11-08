@@ -32,9 +32,10 @@ button {
     background-color: #242424;
     color: white;
     border-radius: 5px;
-    border-style: solid;
+    border-style: none;
     border-width: thin;
     border-color: rgb(161, 161, 161);
+    text-align: left;
 }
 
 button:hover {
