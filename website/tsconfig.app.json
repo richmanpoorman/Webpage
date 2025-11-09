@@ -27,5 +27,6 @@
     /* Allow for importing json file */
     "resolveJsonModule": true
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": ["src/hidden/*"]
 }
