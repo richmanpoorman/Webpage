@@ -1,4 +1,4 @@
-import { Children, useState, type ReactElement, type ReactNode } from "react";
+import { Children, useState, type CSSProperties, type ReactElement, type ReactNode } from "react";
 import { TabContext } from "./TabContext";
 import "./TabsList.css"
 import Tab, { type TabProps } from "./Tab";

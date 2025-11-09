@@ -10,15 +10,19 @@ type SidebarProps = {
 
 function Sidebar({className = "", currentContent, setCurrentContent} : SidebarProps) : ReactElement {
     
+
     function setViewFunction(toContent : CurrentContentView) : () => void {
         return () => setCurrentContent(toContent); 
     }
 
-    const selected      : CSSProperties = { "--selected" : currentContent } as CSSProperties;
+    function decideSelected(whichContentView : CurrentContentView) : string {
+        return whichContentView == currentContent ? "sidebar-currently-selected" : "sidebar-not-currently-selected";
+    }
+    
     // const homeTab       : ReactElement  = <button className="sidebar-home-button"       onClick={setViewFunction("Home")}                      style={selected}>About</button>
-    const coursesTab    : ReactElement  = <button className="sidebar-courses-button sidebar-button"    onClick={setViewFunction("Courses")}                   style={selected}>Courses</button>
-    const projectsTab   : ReactElement  = <button className="sidebar-projects-button sidebar-button"   onClick={setViewFunction("Projects")}                  style={selected}>Projects</button>
-    const resumeTab     : ReactElement  = <button className="sidebar-resume-button sidebar-button"     onClick={setViewFunction("Resume")}                    style={selected}>Resume</button>
+    const coursesTab    : ReactElement  = <button className={"sidebar-courses-button sidebar-button "  + decideSelected("Courses")}  onClick={setViewFunction("Courses")}>Courses</button>
+    const projectsTab   : ReactElement  = <button className={"sidebar-projects-button sidebar-button " + decideSelected("Projects")} onClick={setViewFunction("Projects")}>Projects</button>
+    const resumeTab     : ReactElement  = <button className={"sidebar-resume-button sidebar-button "   + decideSelected("Resume")}   onClick={setViewFunction("Resume")}>Resume</button>
     // const letttersTab   : ReactElement  = <button className="sidebar-letters-button sidebar-button"    onClick={setViewFunction("Letters of Reccomendation")} style={selected}>Letters of Recommendation</button>
     // const transcriptTab : ReactElement  = <button className="sidebar-transcript-button sidebar-button" onClick={setViewFunction("Transcript")}                style={selected}>Transcript</button>
     return (

@@ -21,19 +21,19 @@
             "title"       : "Stepping Stones", 
             "link"        : "https://github.com/JamesEye/MangoTangoBoardGame", 
             "description" : "An online version of a physical board game by James Intrilligator and Patrick Williams. The game consisted of tiles that you could place and move, and a scout which could move on top of the same colored tiles. The goal of the game was to either reach the other end of the board or to push the opponents scout off. The game also had a special mechanic where the players could 'push' rows or columns of tiles, adding to the strategic depth of the game. Built in a team of 4 in Godot with C#.", 
-            "image"       : ""
+            "image"       : "public/images/projects/stepping-stones.png"
         }, 
         {
             "title"       : "Spellweaver", 
             "link"        : "https://richmanpoorman.itch.io/spell-weaver-demo", 
             "description" : "A videogame built on the premise of creating new 'spells' by combining different traits to create new spells by the player's design. With over 1000 options for the player, the game emphasizes player creativity. Built in a team of 4 in Unity with C#.", 
-            "image"       : ""
+            "image"       : "public/images/projects/spell-weaver.avif"
         }, 
         {
             "title"       : "Dungeon Restocker", 
             "link"        : "https://github.com/JiuyaLin/GMTKGameJam2023", 
             "description" : "A videogame where instead of gaining items to get more power, you drop cursed items to get rid of curses. This focuses on adaptation of the player and the ability to create builds by only keeping items that synergize. Built in a team of 5 in Unity with C#.", 
-            "image"       : ""
+            "image"       : "public/images/projects/dungeon-restocker.png"
         },
         {
             "title"       : "Multiplayer Pacman", 
@@ -63,19 +63,19 @@
             "title"       : "Pong on the FPGA", 
             "link"        : "https://github.com/Eddyzzzzz/Pong", 
             "description" : "A lower-level implementation of the classic game of Pong, built to run on an FPGA. Developed in a team of 4 using VHDL.", 
-            "image"       : ""
+            "image"       : "public/images/projects/pong.png"
         },
         {
             "title"       : "Ocean Simulation", 
             "link"        : "https://github.com/Snw125/Computer-Graphics-Final", 
             "description" : "A simulation of ocean water using the sin of sins technique, a technique common in the gaming industry for water. The water was rendered using the GPU allowing for fast and large computations. Built in a team of 3 using Unity using GLSL.", 
-            "image"       : ""
+            "image"       : "public/images/projects/ocean-sim.png"
         },
         {
             "title"       : "Taxi Rush", 
             "link"        : "https://richmanpoorman.itch.io/taxi-rush", 
             "description" : "A puzzle game where you direct taxi cars to their destination by placing blockades in their way. Built in a team of 4 in Unity using C#. ", 
-            "image"       : ""
+            "image"       : "public/images/projects/taxi-rush.png"
         }
         
     ],

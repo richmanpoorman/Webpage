@@ -8,7 +8,7 @@ type ProjectListProps = {
 
 type Project = {
     title        : string, 
-    link         : string, 
+    link?        : string, 
     description? : string,
     image?       : string
 };
@@ -24,19 +24,20 @@ function ProjectList({className = ""} : ProjectListProps) : ReactElement {
 }
 
 function ProjectDisplay(project : Project) : ReactElement {
-    // let image       = project.image ? <img className="project-image" src={project.image} /> 
-    //                                 : <div className="project-image"></div>; 
+    let image       = project.image ? <img className="project-image" src={project.image} /> 
+                                    : <></>; 
     let title       = <h2 className="project-title">{project.title}</h2>; 
     let description = project.description ? <p className="project-description">{project.description}</p> 
                                           : <></>;
+    let link        = project.link? <a className="project-link" href={project.link} >See Project</a> : <></>;
     return (
-        <a href={project.link} className="project-display">
-            <div className="project-display-content">
-                {/* {image} */}
-                {title}
-                {description}
-            </div>
-        </a>
+        <div className="project-display">
+            {title}
+            {description}
+            {image}
+            {link}
+        </div>
+        
     );
 }
 

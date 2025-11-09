@@ -2,17 +2,17 @@
 .site-grid {
     box-sizing: border-box;
     display : grid; 
-    min-width  : 100%; 
-    min-height : 100%;
-    padding    : 50px;
-    gap: 10px 10px;
-    grid-template-columns: 12vw auto;
-    grid-template-rows: 10vh auto auto 1fr;
+    width   : 100%; 
+    height  : 100%; 
+    padding : 50px;
+    gap: 40px 10px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto 1fr auto;
     grid-template-areas: 
-        "header  main"
-        "sidebar main"
-        "footer  main"
-        ".       main";
+        "header  sidebar"
+        "main    main"
+        "footer  footer";
+        /* ".       main"; */
 
 }
 
@@ -49,7 +49,7 @@
     width  : 100%; 
     height : 100%; 
     grid-area : main; 
-    /* overflow: auto; */
+    overflow: auto;
 }
 
 .site-grid-footer {

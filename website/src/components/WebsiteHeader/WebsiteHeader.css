@@ -1,18 +1,6 @@
-.website-header {
-    container-type : size; 
-    container-name : header;
-    width : 100%;
-    height : 100%;
-}
 
 .header-home-button {
-    width : 100%;
-    height : 100%;
-    font-size : min(1em, 15cqh, 5cqw);
-}
-
-@media screen and (max-width : 1024px) {
-    .header-home-button {
-        text-align: center;
-    }
+    font-size : 0.5em;
+    padding: 0px 20px;
+    border-radius: 20px;
 }
