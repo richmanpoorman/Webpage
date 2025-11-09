@@ -1,4 +1,4 @@
-import { Children, useState, type CSSProperties, type ReactElement, type ReactNode } from "react";
+import { Children, useState, type ButtonHTMLAttributes, type CSSProperties, type ReactElement, type ReactNode } from "react";
 import { TabContext } from "./TabContext";
 import "./TabsList.css"
 import Tab, { type TabProps } from "./Tab";
@@ -11,7 +11,7 @@ type TabsListProps = {
     showInitial?  : boolean
 };
 
-function TabsList({className, children, showInitial = true} : TabsListProps) : ReactElement {
+function TabsList({className, children, showInitial = false} : TabsListProps) : ReactElement {
     if (Children.count(children) < 1) return <></>; 
     if (Children.count(children) == 1) { 
         return ( 
@@ -57,9 +57,12 @@ function TabsList({className, children, showInitial = true} : TabsListProps) : R
 function getFirstTab(children : ReactElement[]) : ReactElement {
     if (children.length == 0) return <></>; 
     const firstElement : ReactElement = children[0]; 
-    if (firstElement.type == Tab) return <>{(firstElement.props as TabProps).children}</>
-    else if (firstElement.type == TabGroup) return getFirstTab((firstElement.props as TabGroupProps).children);
-    return <>{children}</>;
+    if (firstElement.type == TabGroup) return getFirstTab((firstElement.props as TabGroupProps).children);
+    if (firstElement.type != Tab) return <>{children}</>;
+    const props : TabProps = firstElement.props as TabProps;
+
+    return <>{props.children}</>
+    
 }
 
 export default TabsList;

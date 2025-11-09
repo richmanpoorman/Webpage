@@ -50,6 +50,16 @@
     display : block;
     width   : 100%;
     margin  : 0px 5px; 
+    border-style: solid;
+    border-color:transparent;
+}
+
+.courses-course-tab.tab-selected {
+    border-color: white;
+}
+
+.courses-course-tab.tab-not-selected {
+    border-color: transparent;
 }
 
 .courses-semester {

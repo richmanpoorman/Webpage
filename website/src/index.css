@@ -3,9 +3,9 @@
 :root {
     --background-color : black;
 
-    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     line-height: 1.5;
-    font-weight: 400;
+    font-weight: 300;
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
     background-color: var(--background-color);
