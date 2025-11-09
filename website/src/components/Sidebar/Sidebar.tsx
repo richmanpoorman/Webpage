@@ -1,4 +1,4 @@
-import type { ReactElement, CSSProperties } from "react";
+import type { ReactElement } from "react";
 import type { CurrentContentView } from "../SiteGrid/SiteGrid";
 import "./Sidebar.css";
 
