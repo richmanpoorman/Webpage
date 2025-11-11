@@ -6,7 +6,7 @@
 @property --color {
     syntax: "<color>";
     inherits: true; 
-    initial-value: light-grey; 
+    initial-value: lightgrey; 
 }
 
 @property --bg-color {
@@ -15,12 +15,30 @@
     initial-value: black; 
 }
 
+
+.skill-outline {
+    --color    : grey; 
+    --bg-color : transparent; 
+    padding : 3px; 
+    border-width: thin;
+    border-radius: 10px;
+    border-style: solid;
+    /* margin : 5px; */
+    background-color: transparent;
+    border-color : transparent;
+    transition : border-color 0.3s ease-in-out;
+}
+
+.skill-outline:hover {
+    border-color : var(--bg-color)
+}
+
 .skill {
     --color    : grey; 
     --bg-color : transparent; 
 
     padding : 0px 7px; 
-    margin : 5px;
+    
     border-style: solid;
     border-radius: 10px;
     border-width: thin;

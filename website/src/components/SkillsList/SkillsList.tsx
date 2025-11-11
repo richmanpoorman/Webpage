@@ -22,9 +22,12 @@ function makeSkillElement(skill : string) : ReactElement {
     
     const skillTag : string = " " + (skill.toLowerCase() in skillMapping ? skillMapping[skill.toLowerCase()] : "default-skill");
     return (
-        <div className={"skill" + skillTag}>
-            {skill}
+        <div className={"skill-outline" + skillTag}>
+            <div className={"skill" + skillTag}>
+                {skill}
+            </div>
         </div>
+
     );
 }
 
