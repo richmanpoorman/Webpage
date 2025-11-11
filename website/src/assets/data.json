@@ -16,6 +16,69 @@
             "You can reach me at my email: matthewkw123@gmail.com"
         ]
     },
+    "skillCategory" : {
+        "typescript"                  : "programming-language-skill", 
+        "express.js"                  : "technology-skill", 
+        "node.js"                     : "technology-skill", 
+        "mongodb"                     : "technology-skill", 
+        "mern"                        : "design-skill", 
+        "react"                       : "technology-skill", 
+        "css"                         : "programming-language-skill",
+        "python"                      : "programming-language-skill", 
+        "fastapi"                     : "technology-skill", 
+        "azure functions"             : "technology-skill",
+        "docker"                      : "technology-skill", 
+        "chatgpt api"                 : "technology-skill", 
+        "ollama"                      : "technology-skill", 
+        "meta segment anything model" : "technology-skill", 
+        "langchain"                   : "technology-skill", 
+        "huggingface"                 : "technology-skill", 
+        "oop"                         : "design-skill", 
+        "agile"                       : "soft-skill", 
+        "api documentation"           : "soft-skill", 
+        "leadership"                  : "soft-skill", 
+        "debugging"                   : "soft-skill", 
+        "teaching"                    : "soft-skill", 
+        "organization"                : "soft-skill",
+        "html"                        : "programming-language-skill"
+    },
+    "experiences" : [
+        {
+            "title"   : "Founding Software Engineer",
+            "company" : "Rodium", 
+            "summary" : [
+                "Worked with industry experts to develop a streamlined management product which integrated 4+ companies under the same management into one location for easier overview of assets",
+                "Developed an interface for a legal document signing application using React for negotiating parties to reduce time wasted scheduling meetings",
+                "Organized the MongoDB database schema to scale for users to edit and negotiate on asssets in parallel, improving speed and functionality",
+                "Built an API to connect the user front-end to the servers, creating a more secure connection to the database using Express.js and Node.js"
+            ],
+            "skills" : ["TypeScript",  "CSS", "HTML", "Express.js", "Node.js", "MongoDB", "React", "MERN"]
+        }, 
+        {
+            "title"   : "AS Watsons AI Intern",
+            "company" : "CK Hutchingson", 
+            "summary" : [
+                "Created a chatbot using LangChain and the ChatGPT API, deployed using FastAPI and Azure Functions, automating content generation for the marketing team reducing campaign generation from ~960 to ~5 mins, streamlining marketing operations and boosting productivity",
+                "Automated data extraction from XML files using Python, transferring the data to a MongoDB database, saving 100+ hours of work, improving cost efficiency and enhancing data integrations across marketing team's platforms",
+                "Used NLP to vector index 1000+ entries of data to improve the accuracy of the SQL instructions for the chatbot generation",
+                "Built an AGILE-focused object oriented program in Python to adapt to changing requirements within 12 hours",
+                "Designed and documented an intuitive API interface to develop faster in parallel with the front-end team", 
+                "Investigated and compared open-source LLMs such as Meta's Llama model to maintain functionality while reducing costs", 
+                "Constructed an automatic advertisement builder using Meta's SAM model to generate 100+ custom ads in under 1 second to target sales to users more efficiently"
+            ],
+            "skills" : ["Python", "FastAPI", "Azure Functions", "Docker", "ChatGPT API", "Ollama", "Meta Segment Anything Model", "MongoDB", "LangChain", "HuggingFace", "OOP", "AGILE", "API Documentation"]
+        },
+        {
+            "title"   : "Computation Theory Teaching Assistant",
+            "company" : "Tufts University", 
+            "summary" : [
+                "Lead recitations of 30+ students and study sessions of 100+ students to develop critical thinking and deeper understanding of course topics by exploring alternate solutions, so that they could adapt and apply knowledge rather than shallowly remember", 
+                "Built up and taught lessons from scratch to students to lead them to their own understanding, resulting in an average of 10 points higher on exams compared to the class average",
+                "Tailored explanations to each student by leading them with questions and asking to voice their thoughts, making out-of-the box concepts to become intuitive and easier to understand for each student as I worked with them more"
+            ],
+            "skills" : ["Leadership", "Debugging", "Teaching", "Organization"]
+        }
+    ],
     "projects" : [
         {
             "title"       : "Stepping Stones", 

@@ -20,14 +20,16 @@ function Sidebar({className = "", currentContent, setCurrentContent} : SidebarPr
     }
     
     // const homeTab       : ReactElement  = <button className="sidebar-home-button"       onClick={setViewFunction("Home")}                      style={selected}>About</button>
-    const coursesTab    : ReactElement  = <button className={"sidebar-courses-button sidebar-button "  + decideSelected("Courses")}  onClick={setViewFunction("Courses")}>Courses</button>
-    const projectsTab   : ReactElement  = <button className={"sidebar-projects-button sidebar-button " + decideSelected("Projects")} onClick={setViewFunction("Projects")}>Projects</button>
-    const resumeTab     : ReactElement  = <button className={"sidebar-resume-button sidebar-button "   + decideSelected("Resume")}   onClick={setViewFunction("Resume")}>Resume</button>
+    const coursesTab    : ReactElement     = <button className={"sidebar-courses-button sidebar-button "  + decideSelected("Courses")}           onClick={setViewFunction("Courses")}>Courses</button>
+    const projectsTab   : ReactElement     = <button className={"sidebar-projects-button sidebar-button " + decideSelected("Projects")}          onClick={setViewFunction("Projects")}>Projects</button>
+    const resumeTab     : ReactElement     = <button className={"sidebar-resume-button sidebar-button "   + decideSelected("Resume")}            onClick={setViewFunction("Resume")}>Resume</button>
+    const workExperienceTab : ReactElement = <button className={"sidebar-resume-button sidebar-button "   + decideSelected("Work Experience")}   onClick={setViewFunction("Work Experience")}>Work Experience</button>
     // const letttersTab   : ReactElement  = <button className="sidebar-letters-button sidebar-button"    onClick={setViewFunction("Letters of Reccomendation")} style={selected}>Letters of Recommendation</button>
     // const transcriptTab : ReactElement  = <button className="sidebar-transcript-button sidebar-button" onClick={setViewFunction("Transcript")}                style={selected}>Transcript</button>
     return (
         <div className={"website-sidebar " + className}>
             {/* <div>{homeTab}</div> */}
+            {workExperienceTab}
             {projectsTab}
             {resumeTab}
             {coursesTab}

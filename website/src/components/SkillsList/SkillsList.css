@@ -1,0 +1,81 @@
+.skill-list {
+    display : flex; 
+    width : 100%; 
+}
+
+@property --color {
+    syntax: "<color>";
+    inherits: true; 
+    initial-value: light-grey; 
+}
+
+@property --bg-color {
+    syntax: "<color>";
+    inherits: true; 
+    initial-value: black; 
+}
+
+.skill {
+    --color    : grey; 
+    --bg-color : transparent; 
+
+    padding : 0px 7px; 
+    margin : 5px;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: thin;
+    color : var(--color); 
+    background-color: var(--bg-color);
+    flex : 0 0 auto; 
+    transition : color 0.3s, background-color 0.3s;
+}
+
+.default-skill {
+    --color    : grey; 
+    --bg-color : transparent; 
+}
+
+.programming-language-skill {
+    --color    : red; 
+    --bg-color : transparent; 
+}
+
+.technology-skill {
+    --color    : lightblue; 
+    --bg-color : transparent; 
+}
+
+.design-skill {
+    --color    : orange; 
+    --bg-color : transparent; 
+}
+
+.soft-skill {
+    --color    : lightgreen; 
+    --bg-color : transparent; 
+}
+
+html:has(.default-skill:hover) .default-skill{
+    --color    : black; 
+    --bg-color : grey; 
+}
+
+html:has(.programming-language-skill:hover) .programming-language-skill {
+    --color    : black; 
+    --bg-color : red; 
+}
+
+html:has(.technology-skill:hover) .technology-skill {
+    --color    : black; 
+    --bg-color : lightblue; 
+}
+
+html:has(.design-skill:hover) .design-skill {
+    --color    : black; 
+    --bg-color : orange; 
+}
+
+html:has(.soft-skill:hover) .soft-skill {
+    --color    : black; 
+    --bg-color : lightgreen; 
+}

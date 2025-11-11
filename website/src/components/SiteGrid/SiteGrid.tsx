@@ -11,8 +11,9 @@ import TranscriptTab from "../TranscriptTab/TranscriptTab";
 import CoursesTab from "../CoursesTab/CoursesTab";
 import HomeTab from "../HomeTab/HomeTab";
 import Footer from "../Footer/Footer";
+import ExperienceTab from "../ExperienceTab/ExperienceTab";
 
-export type CurrentContentView = "Home" | "Courses" | "Projects" | "Resume" | "Letters of Reccomendation" | "Transcript"; 
+export type CurrentContentView = "Home" | "Courses" | "Projects" | "Resume" | "Letters of Reccomendation" | "Transcript" | "Work Experience"; 
 
 function SiteGrid() : ReactElement {
     const [currentContent, setCurrentContent] = useState<CurrentContentView>("Home"); 
@@ -29,7 +30,7 @@ function SiteGrid() : ReactElement {
     );
 }
 
-function getCorrectContent(currentContent : CurrentContentView, contentClassName : string = "site-grid-content") : ReactElement {
+function getCorrectContent(currentContent : CurrentContentView, contentClassName : string = "site-grid-tab-content") : ReactElement {
     switch (currentContent) {
         case "Home":
             return <HomeTab className={contentClassName}/>;
@@ -42,7 +43,9 @@ function getCorrectContent(currentContent : CurrentContentView, contentClassName
         case "Letters of Reccomendation":
             return <LetterTab className={contentClassName}/>; 
         case "Transcript":
-            return <TranscriptTab className={contentClassName}/>
+            return <TranscriptTab className={contentClassName}/>;
+        case "Work Experience": 
+            return <ExperienceTab className={contentClassName}/>;
     }
 }
 

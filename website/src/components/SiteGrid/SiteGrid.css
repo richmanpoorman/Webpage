@@ -50,6 +50,23 @@
     height : 100%; 
     grid-area : main; 
     overflow: auto;
+    scrollbar-gutter: stable;
+    
+}
+.site-grid-tab-content { 
+    animation: fade-in 1s ease-in-out;
+    scrollbar-gutter: stable;
+}
+
+@keyframes fade-in {
+    0% {
+        transform: translateY(50%);
+        opacity : 0;
+    } 
+    100%   {
+        transform: translateY(0px);
+        opacity : 1;
+    }
 }
 
 .site-grid-footer {

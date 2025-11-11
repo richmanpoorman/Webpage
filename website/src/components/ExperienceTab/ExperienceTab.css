@@ -1,0 +1,19 @@
+.work-experience-tab {
+
+}
+
+html:has(.default-skill:hover) .default-skill{
+    --color    : black; 
+    --bg-color : grey; 
+}
+
+html:has(.programming-language-skill:hover) .programming-language-skill {
+    --color    : black; 
+    --bg-color : red; 
+}
+.work-experience-skills {
+
+
+
+    
+} 
