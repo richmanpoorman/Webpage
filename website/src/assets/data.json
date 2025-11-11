@@ -40,7 +40,24 @@
         "debugging"                   : "soft-skill", 
         "teaching"                    : "soft-skill", 
         "organization"                : "soft-skill",
-        "html"                        : "programming-language-skill"
+        "html"                        : "programming-language-skill",
+        "c#"                          : "programming-language-skill",
+        "godot"                       : "technology-skill", 
+        "system architecture"         : "design-skill", 
+        "distributed systems"         : "design-skill",
+        "unity"                       : "technology-skill",
+        "c"                           : "programming-language-skill", 
+        "erlang"                      : "programming-language-skill", 
+        "matlab"                      : "programming-language-skill", 
+        "vhdl"                        : "programming-language-skill", 
+        "integrated systems"          : "design-skill", 
+        "fpga"                        : "technology-skill",
+        "glsl"                        : "programming-language-skill", 
+        "modeling"                    : "soft-skill",
+        "computer graphics"           : "design-skill",
+        "game design"                 : "design-skill", 
+        "pillow"                      : "technology-skill", 
+        "pygame"                      : "technology-skill"
     },
     "experiences" : [
         {
@@ -84,61 +101,71 @@
             "title"       : "Stepping Stones", 
             "link"        : "https://github.com/JamesEye/MangoTangoBoardGame", 
             "description" : "An online version of a physical board game by James Intrilligator and Patrick Williams. The game consisted of tiles that you could place and move, and a scout which could move on top of the same colored tiles. The goal of the game was to either reach the other end of the board or to push the opponents scout off. The game also had a special mechanic where the players could 'push' rows or columns of tiles, adding to the strategic depth of the game. Built in a team of 4 in Godot with C#.", 
-            "image"       : "images/projects/stepping-stones.png"
+            "image"       : "images/projects/stepping-stones.png",
+            "skills"      : ["C#", "Godot", "OOP", "Leadership", "Game Design", "System Architecture", "Distributed Systems"]
         }, 
         {
             "title"       : "Spellweaver", 
             "link"        : "https://richmanpoorman.itch.io/spell-weaver-demo", 
             "description" : "A videogame built on the premise of creating new 'spells' by combining different traits to create new spells by the player's design. With over 1000 options for the player, the game emphasizes player creativity. Built in a team of 4 in Unity with C#.", 
-            "image"       : "images/projects/spell-weaver.png"
+            "image"       : "images/projects/spell-weaver.png", 
+            "skills"      : ["C#", "Unity", "Game Design", "System Architecture"]
         }, 
         {
             "title"       : "Dungeon Restocker", 
             "link"        : "https://snowhkay.itch.io/dungeon-restocker", 
             "description" : "A videogame where instead of gaining items to get more power, you drop cursed items to get rid of curses. This focuses on adaptation of the player and the ability to create builds by only keeping items that synergize. Built in a team of 5 in Unity with C#.", 
-            "image"       : "images/projects/dungeon-restocker.png"
+            "image"       : "images/projects/dungeon-restocker.png", 
+            "skills"      : ["C#", "Unity", "Game Design", "System Architecture", "Organization"]
         },
         {
             "title"       : "Multiplayer Pacman", 
             "link"        : "https://github.com/richmanpoorman/CS21_FinalProject", 
             "description" : "A twist on the classic game of Pacman, where multiple people can join and play at the same time. The goal is to out-survive all of the other players, with threats from ghosts chasing players around the map. Made with Python and Erlang.", 
-            "image"       : ""
+            "image"       : "", 
+            "skills"      : ["Python", "Erlang", "Distributed Systems", "System Architecture", "OOP"]
         },
         {
             "title"       : "Wave Function Collapse Terrain Generation", 
             "link"        : "https://github.com/richmanpoorman/WaveFunctionCollapse", 
             "description" : "An generalized implementation of Wave Function Collapse for terrain generation, with adjustable weightings and tiling. Built as a way of generating more natural terrain from scratch. Coded in Python.", 
-            "image"       : "images/projects/wave-function-collapse.png"
+            "image"       : "images/projects/wave-function-collapse.png",
+            "skills"      : ["Python", "Pillow", "Pygame", "OOP"]
         },
         {
             "title"       : "Lossy Photo Compression", 
             "link"        : "https://github.com/richmanpoorman/CS40_HW_4", 
             "description" : "A lossy compression algorithm for photos which reduced file size by 75% while maintaing above 90% accuracy. Used color theory and bitpacking to reduce the file size while minimizing lost. Built in a team of 2 in C.", 
-            "image"       : ""
+            "image"       : "",
+            "skills"      : ["C", "System Architecture"]
         },
         {
             "title"       : "Night Club Flow Modeling", 
             "link"        : "https://github.com/richmanpoorman/MATH87-Final-Project", 
             "description" : "Modeled a night club with a bar for drinks, a food area, and a dance floor. Optimized for the bar to make as much money as possible, while maintaining enjoyment by keeping people on the dance floor. Also accounted for different drinks with different pricing throughout the night, and different entrance tickets of varying prices and times. Built in a team of 3 using MATLAB.", 
-            "image"       : ""
+            "image"       : "", 
+            "skills"      : ["MATLAB", "Modeling"]
         },
         {
             "title"       : "Pong on the FPGA", 
             "link"        : "https://github.com/Eddyzzzzz/Pong", 
             "description" : "A lower-level implementation of the classic game of Pong, built to run on an FPGA. Developed in a team of 4 using VHDL.", 
-            "image"       : "images/projects/pong.png"
+            "image"       : "images/projects/pong.png", 
+            "skills"      : ["VHDL", "Integrated Systems", "FPGA"]
         },
         {
             "title"       : "Ocean Simulation", 
             "link"        : "https://github.com/Snw125/Computer-Graphics-Final", 
             "description" : "A simulation of ocean water using the sin of sins technique, a technique common in the gaming industry for water. The water was rendered using the GPU allowing for fast and large computations. Built in a team of 3 using Unity using GLSL.", 
-            "image"       : "images/projects/ocean-sim.png"
+            "image"       : "images/projects/ocean-sim.png",
+            "skills"      : ["Unity", "GLSL", "Computer Graphics"]
         },
         {
             "title"       : "Taxi Rush", 
             "link"        : "https://richmanpoorman.itch.io/taxi-rush", 
             "description" : "A puzzle game where you direct taxi cars to their destination by placing blockades in their way. Built in a team of 4 in Unity using C#. ", 
-            "image"       : "images/projects/taxi-rush.png"
+            "image"       : "images/projects/taxi-rush.png",
+            "skills"      : ["C#", "Unity", "Game Design", "System Architecture"]
         }
         
     ],

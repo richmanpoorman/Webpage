@@ -1,6 +1,7 @@
 .skill-list {
     display : flex; 
     width : 100%; 
+    flex-wrap: wrap;
 }
 
 @property --color {
@@ -46,20 +47,12 @@
     background-color: var(--bg-color);
     flex : 0 0 auto; 
     transition : color 0.3s, background-color 0.3s;
+    white-space: nowrap;
 }
 
-.default-skill {
-    --color    : grey; 
-    --bg-color : transparent; 
-}
-
-html:has(.default-skill:hover) .default-skill{
-
-    --color    : black; 
-    --bg-color : grey; 
-}
 
 .programming-language-skill {
+    order      : 0; 
     --color    : coral; 
     --bg-color : transparent; 
 }
@@ -70,6 +63,7 @@ html:has(.programming-language-skill:hover) .programming-language-skill {
 }
 
 .technology-skill {
+    order      : 1;
     --color    : lightblue; 
     --bg-color : transparent; 
 }
@@ -80,6 +74,7 @@ html:has(.technology-skill:hover) .technology-skill {
 }
 
 .design-skill {
+    order      : 2; 
     --color    : orange; 
     --bg-color : transparent; 
 }
@@ -91,6 +86,7 @@ html:has(.design-skill:hover) .design-skill {
 }
 
 .soft-skill {
+    order      : 3; 
     --color    : lightgreen; 
     --bg-color : transparent; 
 }
@@ -98,4 +94,17 @@ html:has(.design-skill:hover) .design-skill {
 html:has(.soft-skill:hover) .soft-skill {
     --color    : black; 
     --bg-color : lightgreen; 
+}
+
+
+.default-skill {
+    order      : 4;
+    --color    : grey; 
+    --bg-color : transparent; 
+}
+
+html:has(.default-skill:hover) .default-skill{
+
+    --color    : black; 
+    --bg-color : grey; 
 }
