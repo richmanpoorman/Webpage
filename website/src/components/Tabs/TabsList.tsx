@@ -15,7 +15,8 @@ function TabsList({className, children, showInitial = false} : TabsListProps) : 
     if (Children.count(children) < 1) return <></>; 
     if (Children.count(children) == 1) { 
         return ( 
-            <div className={"tabs-list " + className}>
+            <div className={"tab-area " + className}>
+                <div className="tabs-bar"></div>
                 <div className="tabs-current-content">
                     { getFirstTab(children) }
                 </div> 
@@ -42,7 +43,7 @@ function TabsList({className, children, showInitial = false} : TabsListProps) : 
         );
     });
     return (
-        <div className={"tabs-list " + className}>
+        <div className={"tab-area " + className}>
             <div className="tabs-bar">
                 {childrenWithContext}
             </div>

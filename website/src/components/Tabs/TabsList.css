@@ -1,12 +1,30 @@
-.tabs-list {
-    display : flex;
-    flex-flow: column;
+.tab-area {
+    display : grid;
+    grid-template-areas: 
+        "tab-bar"
+        "tab-content";
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr;
     width : 100%; 
     height : 100%; 
 }
 
+.tabs-bar {
+    grid-area: tab-bar; 
+    display : flex; 
+    flex-flow: row; 
+    width : 100%; 
+    height : 100%; 
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    > * {
+        flex: 1 0 auto;
+    }
+}
+
 .tabs-current-content {
-    flex: 1 0 auto;
-    max-width : 100%; 
-    max-height : 100%;
+    grid-area: tab-content;
+    width : 100%; 
+    height : 100%;
+    overflow: auto;
 }
