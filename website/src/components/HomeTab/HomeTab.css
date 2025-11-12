@@ -19,6 +19,21 @@
     flex: 0 0 auto;
 }
 
+.home-link-icons {
+    float : left;
+    padding : 0px; 
+    text-align: center;
+    
+}
+
+.home-link-icon {
+    font-size: 30px;
+    margin : 0 auto; 
+    padding: 20px;
+    color: white;
+    flex : 1 1 auto; 
+}
+
 @media screen and (max-width : 1024px) {
     .home-tab {
         padding : 0px; 
@@ -29,7 +44,7 @@
         width : auto; 
         aspect-ratio : 5 / 7;
     }
-    .home-description {
+    .home-content {
         height : 100%;
         overflow: auto;
     }
@@ -46,7 +61,7 @@
         height : auto;
         align-self: center;
     }
-    .home-description {
+    .home-content {
         height : auto;
     }
 }
