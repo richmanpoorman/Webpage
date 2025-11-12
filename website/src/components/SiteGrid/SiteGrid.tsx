@@ -10,7 +10,7 @@ import LetterTab from "../LetterTab/LetterTab";
 import TranscriptTab from "../TranscriptTab/TranscriptTab";
 import CoursesTab from "../CoursesTab/CoursesTab";
 import HomeTab from "../HomeTab/HomeTab";
-import Footer from "../Footer/Footer";
+// import Footer from "../Footer/Footer";
 import ExperienceTab from "../ExperienceTab/ExperienceTab";
 
 export type CurrentContentView = "Home" | "Courses" | "Projects" | "Resume" | "Letters of Reccomendation" | "Transcript" | "Work Experience"; 
