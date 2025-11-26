@@ -73,7 +73,7 @@
         }, 
         {
             "title"   : "AS Watsons AI Intern",
-            "company" : "CK Hutchingson", 
+            "company" : "CK Hutchison", 
             "summary" : [
                 "Created a chatbot using LangChain and the ChatGPT API, deployed using FastAPI and Azure Functions, automating content generation for the marketing team reducing campaign generation from ~960 to ~5 mins, streamlining marketing operations and boosting productivity",
                 "Automated data extraction from XML files using Python, transferring the data to a MongoDB database, saving 100+ hours of work, improving cost efficiency and enhancing data integrations across marketing team's platforms",
